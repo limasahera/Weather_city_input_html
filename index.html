@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sky-background">
+        <div class="bg-cloud" style="top: 10%; animation-duration: 25s;"></div>
+        <div class="bg-cloud" style="top: 30%; animation-duration: 40s; animation-delay: -5s;"></div>
+        <div class="bg-cloud" style="top: 60%; animation-duration: 35s; animation-delay: -10s;"></div>
+        <div class="bg-cloud" style="top: 80%; animation-duration: 30s;"></div>
+    </div>
+
+    <div class="container">
+        <h2>Weather App 🌤️</h2>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div class="cloud"></div>
+        <div class="rain">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
